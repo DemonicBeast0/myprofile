@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pratik Majhi — Web Developer, Designer & Problem Solver based in Nepal. Building clean, modern and user-friendly digital products." />
+  <meta name="author" content="Pratik Majhi" />
+  <meta name="theme-color" content="#faf9f6" />
+
+  <meta property="og:title" content="Pratik Majhi | Portfolio" />
+  <meta property="og:description" content="Web Developer, Designer & Problem Solver. Building digital experiences that make an impact." />
+  <meta property="og:type" content="website" />
+
+  <title>Pratik Majhi | Web Developer & Designer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Apply saved / preferred theme before paint to avoid flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("pm-theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="#home" aria-label="Pratik Majhi — home">
+        Pratik Majhi<span class="logo-dot">.</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+
+        <div class="nav-mobile-actions">
+          <a class="btn btn-outline btn-sm" href="resume.html" target="_blank" rel="noopener">Résumé</a>
+          <button class="theme-toggle theme-toggle--mobile" type="button" aria-label="Toggle color theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+            <span>Theme</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm" href="#contact">Get in touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="chip reveal"><span class="status-dot"></span> Available for opportunities</p>
+            <h1 class="reveal">Building digital experiences that <em>make an impact.</em></h1>
+            <p class="hero-text reveal">
+              I'm <strong>Pratik Majhi</strong> — a web developer &amp; designer focused on creating
+              clean, modern and user-friendly digital products.
+            </p>
+            <div class="hero-actions reveal">
+              <a class="btn btn-primary" href="resume.html" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" class="btn-ico" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+                Download Résumé
+              </a>
+              <a class="btn btn-outline" href="#projects">View My Work</a>
+            </div>
+            <dl class="hero-stats reveal">
+              <div><dt data-count="15" data-suffix="+">0</dt><dd>Projects</dd></div>
+              <div><dt data-count="3" data-suffix="+">0</dt><dd>Years Learning</dd></div>
+              <div><dt data-count="100" data-suffix="%">0</dt><dd>Passion</dd></div>
+            </dl>
+          </div>
+
+          <aside class="hero-visual reveal">
+            <figure class="portrait">
+              <!-- To use a real photo: replace the .monogram span below with
+                   <img src="pratik.jpg" alt="Pratik Majhi" /> -->
+              <span class="monogram" aria-hidden="true">PM</span>
+              <figcaption class="portrait-caption">
+                <span>Portfolio — 2026</span>
+                <span class="avail"><span class="status-dot"></span> Available</span>
+              </figcaption>
+            </figure>
+            <p class="portrait-role">Developer · Designer · Problem Solver</p>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Skills marquee -->
+      <div class="marquee reveal" aria-hidden="true">
+        <div class="marquee-track">
+          <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i><span>JavaScript</span><i>✦</i><span>PHP</span><i>✦</i><span>MySQL</span><i>✦</i><span>UI / UX Design</span><i>✦</i><span>Figma</span><i>✦</i><span>Git &amp; GitHub</span><i>✦</i><span>SEO</span><i>✦</i><span>VS Code</span><i>✦</i>
+          <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i><span>JavaScript</span><i>✦</i><span>PHP</span><i>✦</i><span>MySQL</span><i>✦</i><span>UI / UX Design</span><i>✦</i><span>Figma</span><i>✦</i><span>Git &amp; GitHub</span><i>✦</i><span>SEO</span><i>✦</i><span>VS Code</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-label reveal"><span class="num">01</span><span class="line"></span><span>About Me</span></div>
+        <div class="about-grid">
+          <div class="about-lead reveal">
+            <h2>A little about <em>who I am.</em></h2>
+          </div>
+          <div class="about-body reveal">
+            <p class="lead">
+              I enjoy turning ideas into polished, functional and meaningful digital experiences.
+              My approach combines thoughtful design, clean code and continuous learning.
+            </p>
+            <p>
+              Whether it's a website, web application or a new digital concept, I focus on
+              simplicity, performance and a great user experience. I'm always excited to work
+              on challenging projects and collaborate with ambitious people.
+            </p>
+            <dl class="about-details">
+              <div><dt>Name</dt><dd>Pratik Majhi</dd></div>
+              <div><dt>Location</dt><dd>Gramthan, Nepal</dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:pratikmajhi9876@example.com">pratikmajhi9876@example.com</a></dd></div>
+              <div><dt>Role</dt><dd>Web Developer</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-label reveal"><span class="num">02</span><span class="line"></span><span>Skills</span></div>
+        <div class="section-heading reveal">
+          <h2>Tools I use to <em>build things.</em></h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-top"><span class="skill-index">01</span><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span></div>
+            <h3>Frontend Development</h3>
+            <p>Building responsive interfaces with modern web technologies.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-top"><span class="skill-index">02</span><span class="skill-icon" aria-hidden="true">◈</span></div>
+            <h3>UI / UX Design</h3>
+            <p>Designing simple interfaces that feel intuitive and professional.</p>
+            <ul class="tags"><li>Figma</li><li>Wireframes</li><li>Prototyping</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-top"><span class="skill-index">03</span><span class="skill-icon" aria-hidden="true">⌘</span></div>
+            <h3>Development Tools</h3>
+            <p>Working efficiently with tools that support a smooth workflow.</p>
+            <ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-top"><span class="skill-index">04</span><span class="skill-icon" aria-hidden="true">↗</span></div>
+            <h3>Digital Marketing</h3>
+            <p>Creating digital strategies that improve reach and engagement.</p>
+            <ul class="tags"><li>SEO</li><li>Content</li><li>Social Media</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-label reveal"><span class="num">03</span><span class="line"></span><span>Selected Work</span></div>
+        <div class="projects-head reveal">
+          <h2>Projects I'm <em>proud of.</em></h2>
+          <p>A selection of projects from my GitHub, covering web platforms, portfolios and management systems.</p>
+        </div>
+
+        <div class="project-list">
+          <!-- Featured -->
+          <article class="project-card featured reveal">
+            <a class="project-visual mock mock-one" href="https://github.com/DemonicBeast0/jyoti-hardware" target="_blank" rel="noopener noreferrer" aria-label="Jyoti Hardware on GitHub">
+              <!-- To use a real screenshot: add <img src="shots/jyoti.jpg" alt=""> as first child of .mock-body -->
+              <span class="mock-bar"><i></i><i></i><i></i><em>jyoti-hardware</em></span>
+              <span class="mock-body"><span class="mock-title">JYOTI HARDWARE</span></span>
+            </a>
+            <div class="project-info">
+              <div class="project-meta"><span>01 — Business Website</span><span class="repo-tag">GitHub</span></div>
+              <h3>Jyoti Hardware</h3>
+              <p>A professional hardware business website built with Core PHP and MySQL.</p>
+              <ul class="tags"><li>PHP</li><li>MySQL</li><li>Web Development</li></ul>
+              <a href="https://github.com/DemonicBeast0/jyoti-hardware" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <a class="project-visual mock mock-two" href="https://github.com/DemonicBeast0/consultancy-web" target="_blank" rel="noopener noreferrer" aria-label="Consultancy Web on GitHub">
+                <span class="mock-bar"><i></i><i></i><i></i><em>consultancy-web</em></span>
+                <span class="mock-body"><span class="mock-title">CONSULTANCY</span></span>
+              </a>
+              <div class="project-info">
+                <div class="project-meta"><span>02 — Website</span><span class="repo-tag">GitHub</span></div>
+                <h3>Consultancy Web</h3>
+                <p>A web project created for presenting consultancy services and information online.</p>
+                <ul class="tags"><li>Website</li><li>Consultancy</li></ul>
+                <a href="https://github.com/DemonicBeast0/consultancy-web" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-visual mock mock-three" href="https://github.com/DemonicBeast0/school-website-in-php" target="_blank" rel="noopener noreferrer" aria-label="School Website in PHP on GitHub">
+                <span class="mock-bar"><i></i><i></i><i></i><em>school-website</em></span>
+                <span class="mock-body"><span class="mock-title">SCHOOL SITE</span></span>
+              </a>
+              <div class="project-info">
+                <div class="project-meta"><span>03 — PHP Website</span><span class="repo-tag">GitHub</span></div>
+                <h3>School Website in PHP</h3>
+                <p>A school-focused website project developed with PHP.</p>
+                <ul class="tags"><li>PHP</li><li>Education</li><li>Website</li></ul>
+                <a href="https://github.com/DemonicBeast0/school-website-in-php" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="all-projects reveal">
+          <p>More projects on GitHub</p>
+          <div class="all-projects-links">
+            <a href="https://github.com/DemonicBeast0/school-management-system" target="_blank" rel="noopener noreferrer">School Management System <span aria-hidden="true">→</span></a>
+            <a href="https://github.com/DemonicBeast0/EasyBid" target="_blank" rel="noopener noreferrer">EasyBid <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-label reveal"><span class="num">04</span><span class="line"></span><span>Experience</span></div>
+        <div class="experience-grid">
+          <div class="section-heading reveal">
+            <h2>My <em>journey.</em></h2>
+          </div>
+          <ol class="timeline reveal">
+            <li class="timeline-item">
+              <span class="year">2026 — Present</span>
+              <div class="timeline-body">
+                <h3>Web Developer</h3>
+                <p class="company">Freelance / Personal Projects</p>
+                <p>Developing responsive websites and digital products while continuously improving frontend and design skills.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="year">2025 — 2026</span>
+              <div class="timeline-body">
+                <h3>Student Developer</h3>
+                <p class="company">Academic Projects</p>
+                <p>Worked on system analysis, UI design, diagrams, web development and project documentation.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="year">2024 — 2025</span>
+              <div class="timeline-body">
+                <h3>Started My Journey</h3>
+                <p class="company">Learning &amp; Exploration</p>
+                <p>Built a strong foundation in programming, web technologies, design thinking and problem solving.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-label reveal"><span class="num">05</span><span class="line"></span><span>Contact</span></div>
+        <div class="contact-grid">
+          <div class="contact-intro reveal">
+            <h2>Let's build something <em>great together.</em></h2>
+            <p>Have an idea, project or opportunity? Send me a message and let's talk.</p>
+
+            <dl class="contact-methods">
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:pratikmajhi9876@example.com">pratikmajhi9876@example.com</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Gramthan, Nepal</dd>
+              </div>
+            </dl>
+
+            <div class="contact-socials">
+              <a href="https://github.com/DemonicBeast0" target="_blank" rel="noopener noreferrer" aria-label="GitHub: @DemonicBeast0">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.54 1.04 1.54 1.04.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 6.8c.85 0 1.7.11 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.9.68 1.81v2.68c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/pratik-majhi-743016263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: @pratik-majhi">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 3H3.55A.55.55 0 0 0 3 3.55v16.9c0 .3.25.55.55.55h16.9c.3 0 .55-.25.55-.55V3.55a.55.55 0 0 0-.55-.55ZM8.34 18.34H5.66V9.75h2.68v8.59ZM7 8.58a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1Zm11.34 9.76h-2.67v-4.18c0-1 0-2.29-1.4-2.29s-1.61 1.09-1.61 2.22v4.25H10V9.75h2.56v1.17h.04c.36-.68 1.22-1.4 2.5-1.4 2.68 0 3.17 1.76 3.17 4.05v4.77h.07Z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/pra_tik_majhi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @pra_tik_majhi">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm-.17 2A3.03 3.03 0 0 0 4 7.03v9.94A3.03 3.03 0 0 0 7.03 20h9.94A3.03 3.03 0 0 0 20 16.97V7.03A3.03 3.03 0 0 0 16.97 4H7.03ZM12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85Zm0 2A3.15 3.15 0 1 0 15.15 12 3.15 3.15 0 0 0 12 8.85ZM17.35 5.3a1.24 1.24 0 1 1 0 2.48 1.24 1.24 0 0 1 0-2.48Z"/></svg>
+              </a>
+              <a href="https://www.facebook.com/pratik.majhi.9876" target="_blank" rel="noopener noreferrer" aria-label="Facebook: @pratik.majhi.9876">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.87.24-1.46 1.5-1.46H16.6V3.96c-.28-.04-1.23-.12-2.34-.12-2.32 0-3.91 1.42-3.91 4.02V10H7.72v3h2.63v8h3.15Z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formspree-ready form. Replace YOUR_FORM_ID with your Formspree ID
+               (https://formspree.io → New form). Until then it falls back to opening
+               the visitor's email app via mailto. -->
+          <form id="contactForm" class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="field">
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@email.com" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit" id="submitBtn">Send Message</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="#top" aria-label="Back to top">Pratik Majhi<span class="logo-dot">.</span></a>
+        <p class="copyright">© <span id="year"></span> Pratik Majhi. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.html" target="_blank" rel="noopener">Résumé</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
